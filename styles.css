@@ -1,0 +1,91 @@
+:root {
+    --color-darkblue: #03045E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background-color: var(--color-darkblue);
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.containerleft {
+    font-style: italic;
+    background-color: midnightblue;
+    width: 50%;
+    
+}
+
+section {
+    color: lemonchiffon;
+    text-align: center;
+    margin: 50px;
+    
+}
+
+.backscreen {
+    display: flex;
+    min-height: 40vh;
+    overflow: hidden;
+    max-width: 80%;
+    border-radius: 1%;
+}
+
+.foto {
+    width: 50%;
+    background: url("assets/office.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.cantidades {
+    display: flex;
+    margin-top: 30px;
+}
+
+.text {
+    flex:1;
+}
+
+.subtitulo {
+    margin-top: 30px;
+}
+
+.fotovg {
+    height: 100%;
+    width: 100%;
+    background-color: mediumblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+}
+
+.word {
+    color: magenta;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Varela', sans-serif;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
